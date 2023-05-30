@@ -704,7 +704,7 @@ main {
   }
   .section__actions a:last-of-type, .header__menu .main-btn, .main .main-btn, .code__offer a, .section__actions a:first-of-type {
     padding: 0 55px;
-    height: 50px;
+    height: 55px;
     font-size: 15px;
     gap: 5px;
     width: 100%;
