@@ -15,20 +15,25 @@
         <header class="header">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-2">
-                        <a href="/">
+                    <div class="col-md-2 col-4">
+                        <a href="/" class="header__logo">
                             <img src="./img/logo.png" alt="HappyGo">
                         </a>
                     </div>
-                    <div class="col-lg-5">
-                        <a href="mailto:happygo@mail.com">happygo@mail.com</a>
-                    </div>
-                    <div class="col-lg-5">
+                    <div class="col-md-10 col-8">
                         <nav class="header__menu">
-                            <a href="#about">Характеристики</a>
-                            <a href="#instruction">Установка</a>
-                            <a href="#" class="main-btn">Скачать</a> 
+                            <a href="mailto:happygo@mail.com">happygo@mail.com</a>
+                            <div>
+                                <a href="#about" onclick="removeActive()">Характеристики</a>
+                                <a href="#instruction" onclick="removeActive()">Установка</a>
+                                <a href="#" class="main-btn" onclick="removeActive()">Скачать</a> 
+                            </div>
                         </nav>
+                        <div class="header__burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -36,12 +41,12 @@
         <section class="main">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-xl-7">
                         <h1>Система поддержки доставки банковских продуктов</h1>
                         <p>Идейные соображения высшего порядка, а также укрепление внутренней структуры играет определяющее значение.</p>
                         <a href="#" class="main-btn">Подробнее</a>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-xl-5">
                         <img class="main__img" src="./img/main-img.png" alt="main-img" />
                     </div>
                 </div>
@@ -50,7 +55,7 @@
         <section class="about" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 m-auto text-center">
+                    <div class="col-xl-8 m-auto text-center">
                         <p class="about__title">О продукте</p>
                         <h2 class="about__main-title">Мы легко отслеживаем аналитику всех пользователей</h2>
                         <p class="about__title-text">Идейные соображения высшего порядка, а также укрепление внутренней структуры играет определяющее значение.</p>
@@ -121,7 +126,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <img src="./img/refresh.png" alt="cycle">
+                    <img src="./img/refresh.png" alt="cycle" class="cycle__img">
                 </div>
                 <div class="col-lg-7">
                     <h2>Поддержание жизненного цикла продукта</h2>
@@ -177,8 +182,10 @@
     <section class="instruction section" id="instruction">
         <div class="container">
             <div class="row">
+                <h2>Инструкция по установке</h2>
+            </div>
+            <div class="row">
                 <div class="col-12">
-                    <h2>Инструкция по установке</h2>
                     <div class="instruction__actions">
                         <p>Идейные соображения высшего порядка, а также укрепление внутренней структуры играет определяющее значение.</p>
                         <div class="section__actions">
@@ -198,28 +205,30 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-6">
                     <div class="item">
                         <p class="item__number">01</p>
-                        <p class="item__text">И нет сомнений, что некоторые особенности внутренней политики обнародованы. Идейные соображения высшего порядка, а также укрепление и развитие внутренней структуры.</p>
+                        <p>И нет сомнений, что некоторые особенности внутренней политики обнародованы. Идейные соображения высшего порядка, а также укрепление и развитие внутренней структуры.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="item">
                         <p class="item__number">02</p>
-                        <p class="item__text">И нет сомнений, что некоторые особенности внутренней политики обнародованы. Идейные соображения высшего порядка, а также укрепление и развитие внутренней структуры.</p>
+                        <p>И нет сомнений, что некоторые особенности внутренней политики обнародованы. Идейные соображения высшего порядка, а также укрепление и развитие внутренней структуры.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="item">
                         <p class="item__number">03</p>
-                        <p class="item__text">И нет сомнений, что некоторые особенности внутренней политики обнародованы. Идейные соображения высшего порядка, а также укрепление и развитие внутренней структуры.</p>
+                        <p>И нет сомнений, что некоторые особенности внутренней политики обнародованы. Идейные соображения высшего порядка, а также укрепление и развитие внутренней структуры.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="item">
                         <p class="item__number">04</p>
-                        <p class="item__text">И нет сомнений, что некоторые особенности внутренней политики обнародованы. Идейные соображения высшего порядка, а также укрепление и развитие внутренней структуры.</p>
+                        <p>И нет сомнений, что некоторые особенности внутренней политики обнародованы. Идейные соображения высшего порядка, а также укрепление и развитие внутренней структуры.</p>
                     </div>
                 </div>
             </div>
@@ -249,15 +258,15 @@
     <footer class="footer section">
         <div class="container">
             <div class="row align-items-center mb-5">
-                <div class="col-lg-2">
-                    <a href="#">
+                <div class="col-xl-2 col-lg-3 col-4">
+                    <a href="#" class="footer__logo">
                         <img src="./img/logo-f.png" alt="HappyGo">
                     </a>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-xl-5 col-lg-9">
                     <p class="footer__text">Идейные соображения высшего порядка, а также укрепление внутренней структуры играет определяющее значение.</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-xl-5">
                     <div class="section__actions justify-content-end">
                         <a href="#">
                             <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -276,22 +285,22 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="offset-lg-2 col-lg-4">
+                <div class="offset-xl-2 col-xl-4 col-md-3">
                     <p class="footer__company">ООО «СмартСпа»</p>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-xl-2 col-md-3">
                     <div class="footer__credits">
                         <span>ИНН</span>
                         <p>7707083893</p>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-xl-2 col-md-3">
                     <div class="footer__credits">
                         <span>ОГРН</span>
                         <p>1117746358608</p>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-xl-2 col-md-3">
                     <div class="footer__credits">
                         <span>№ аккредитации</span>
                         <p>1117746358608</p>
