@@ -125,10 +125,10 @@ h2 {
 h3 {
   font-weight: 600;
   font-size: 22px;
-  line-height: 110%;
+  line-height: 130%;
 }
 
-.section__actions a:last-of-type, .header__menu .main-btn, .main .main-btn, .code__offer a, .section__actions a:first-of-type {
+.section__actions a:first-of-type, .header__menu .main-btn, .main .main-btn, .code__offer a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -148,33 +148,19 @@ h3 {
   transition: all .3s ease;
 }
 
-.section__actions a:last-of-type svg path, .header__menu .main-btn svg path, .main .main-btn svg path, .code__offer a svg path, .section__actions a:first-of-type svg path {
+.section__actions a:first-of-type svg path, .header__menu .main-btn svg path, .main .main-btn svg path, .code__offer a svg path {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.section__actions a:last-of-type, .header__menu .main-btn, .main .main-btn, .code__offer a {
+.section__actions a:first-of-type, .header__menu .main-btn, .main .main-btn, .code__offer a {
   background: #1268CD;
   color: #fff;
 }
 
-.section__actions a:hover:last-of-type, .header__menu .main-btn:hover, .main .main-btn:hover, .code__offer a:hover {
+.section__actions a:hover:first-of-type, .header__menu .main-btn:hover, .main .main-btn:hover, .code__offer a:hover {
   color: #fff;
   background: #03438d;
-}
-
-.section__actions a:first-of-type {
-  border: 2px solid #1268CD;
-  color: #1268CD;
-}
-
-.section__actions a:hover:first-of-type {
-  background: #1268CD;
-  color: #fff;
-}
-
-.section__actions a:hover:first-of-type svg path {
-  fill: #fff;
 }
 
 @media (min-width: 1200px) {
@@ -287,13 +273,13 @@ main {
 }
 
 .main p {
-  max-width: 480px;
+  max-width: 680px;
   opacity: .7;
   margin: 30px 0 50px;
   position: relative;
   z-index: 1;
   font-size: 18px;
-  line-height: 130%;
+  line-height: 150%;
 }
 
 .main__img {
@@ -327,7 +313,6 @@ main {
 
 .about__main-title {
   margin: 30px auto 25px auto;
-  max-width: 870px;
 }
 
 .about__title-text {
@@ -365,7 +350,7 @@ main {
 }
 
 .about .item p {
-  margin-top: 21px;
+  margin-top: 15px;
   font-size: 18px;
 }
 
@@ -468,7 +453,7 @@ main {
 }
 
 .code__offer h2 {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .footer {
@@ -528,7 +513,7 @@ main {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding: 200px 100px;
+    padding: 200px 100px 0;
   }
   .header__menu a {
     font-size: 20px;
@@ -646,6 +631,7 @@ main {
   .cycle__img {
     display: block;
     margin: 0 auto;
+    max-width: 50%;
   }
   .example .row {
     -webkit-box-orient: vertical;
@@ -687,6 +673,9 @@ main {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .code {
+    padding-bottom: 90px;
+  }
   .code__img {
     width: 100%;
     position: static;
@@ -702,14 +691,14 @@ main {
     font-size: 16px;
     line-height: 160%;
   }
-  .section__actions a:last-of-type, .header__menu .main-btn, .main .main-btn, .code__offer a, .section__actions a:first-of-type {
+  .section__actions a:first-of-type, .header__menu .main-btn, .main .main-btn, .code__offer a {
     padding: 0 55px;
     height: 55px;
     font-size: 15px;
     gap: 5px;
     width: 100%;
   }
-  .section__actions a:last-of-type svg, .header__menu .main-btn svg, .main .main-btn svg, .code__offer a svg, .section__actions a:first-of-type svg {
+  .section__actions a:first-of-type svg, .header__menu .main-btn svg, .main .main-btn svg, .code__offer a svg {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
@@ -717,7 +706,7 @@ main {
     font-size: 44px;
   }
   h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   h3 {
     font-size: 20px;
